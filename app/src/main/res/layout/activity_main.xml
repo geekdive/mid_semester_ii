@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/layer"
+    tools:context="id.dev.septiyadi.button.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIS"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. Telp"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="12sp"/>
+
+        <RadioGroup
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin:"/>
+
+            <RadioButton
+                android:id="@+id/laki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"/>
+
+            <RadioButton
+                android:id="@+id/perempuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btPopUP"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Munculkan Pesan"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/delInput"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus Inputan"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Pesan Inputan:"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c9bfbf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Loading...."
+            android:id="@+id/inView"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
